@@ -1,0 +1,18 @@
+{
+    "title": "IOC",
+    "author": "sking",
+    "description": "IOC",
+    "language": "zh-hans",
+    "gitbook": "3.2.3",
+    "styles": {
+        "website": "./styles/website.css"
+    },
+    "structure": {
+        "readme": "README.md"
+    },
+    "links": {
+        "sidebar": {
+            "百度": "https://baidu.com"
+        }
+    }
+}
