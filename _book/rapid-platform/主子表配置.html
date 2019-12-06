@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>快速开发平台 · IOC</title>
+        <title>主子表类型配置 · IOC</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -47,10 +47,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="快速开发平台使用说明.html" />
+    <link rel="next" href="片段配置.html" />
     
     
-    <link rel="prev" href="../" />
+    <link rel="prev" href="穿梭框片段配置.html" />
     
 
     </head>
@@ -108,7 +108,7 @@
         
         
     
-        <li class="chapter active" data-level="2.1" data-path="./">
+        <li class="chapter " data-level="2.1" data-path="./">
             
                 <a href="./">
             
@@ -188,7 +188,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.1.5" data-path="主子表配置.html">
+        <li class="chapter active" data-level="2.1.1.5" data-path="主子表配置.html">
             
                 <a href="主子表配置.html">
             
@@ -261,7 +261,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >快速开发平台</a>
+        <a href=".." >主子表类型配置</a>
     </h1>
 </div>
 
@@ -276,8 +276,15 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x80CC;&#x666F;">&#x80CC;&#x666F;</h1>
-<p>&#x200B;        &#x8003;&#x8651;&#x5230;&#x5F53;&#x524D;&#x5404;&#x9879;&#x76EE;&#x7684;&#x540E;&#x53F0;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x57FA;&#x7840;&#x529F;&#x80FD;&#x6BD4;&#x8F83;&#x7C7B;&#x4F3C;&#xFF0C;&#x5C55;&#x793A;&#x7684;&#x5185;&#x5BB9;&#x548C;&#x5F62;&#x5F0F;&#x76F8;&#x5BF9;&#x6BD4;&#x8F83;&#x56FA;&#x5B9A;&#xFF0C;&#x5B9A;&#x5236;&#x4E1A;&#x52A1;&#x6A21;&#x5757;&#x5728;&#x6574;&#x4E2A;&#x540E;&#x53F0;&#x9879;&#x76EE;&#x4E2D;&#x5360;&#x6BD4;&#x6BD4;&#x8F83;&#x5C11;&#xFF0C;&#x4E1A;&#x52A1;&#x529F;&#x80FD;&#x590D;&#x7528;&#x6027;&#x6BD4;&#x8F83;&#x4F4E;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8BA1;&#x5212;&#x5C06;&#x6574;&#x4E2A;&#x540E;&#x53F0;&#x7CFB;&#x7EDF;&#x9879;&#x76EE;&#x4EA7;&#x54C1;&#x5316;&#xFF0C;&#x4EE5;&#x201C;&#x53BB;&#x5F00;&#x53D1;&#x201D;&#x4E3A;&#x76EE;&#x6807;&#xFF0C;&#x5C3D;&#x91CF;&#x505A;&#x5230;&#x901A;&#x8FC7;&#x914D;&#x7F6E;&#x5B9E;&#x73B0;&#x5404;&#x9879;&#x76EE;&#x7684;&#x5927;&#x90E8;&#x5206;&#x57FA;&#x7840;&#x901A;&#x7528;&#x529F;&#x80FD;&#xFF0C;&#x5355;&#x72EC;&#x6A21;&#x5757;&#x5316;&#x5F00;&#x53D1;&#x9879;&#x76EE;&#x7684;&#x5B9A;&#x5236;&#x4E1A;&#x52A1;&#xFF1B;</p>
+                                <h1 id="&#x4E3B;&#x5B50;&#x8868;&#x7C7B;&#x578B;&#x914D;&#x7F6E;">&#x4E3B;&#x5B50;&#x8868;&#x7C7B;&#x578B;&#x914D;&#x7F6E;</h1>
+<pre><code class="lang-json">[
+{<span class="hljs-string">&quot;fragId&quot;</span>:<span class="hljs-string">&quot;58&quot;</span>,<span class="hljs-string">&quot;relField&quot;</span>:<span class="hljs-string">&quot;tenant_id&quot;</span>,<span class="hljs-string">&quot;type&quot;</span>:<span class="hljs-string">&quot;master&quot;</span>},
+{<span class="hljs-string">&quot;fragId&quot;</span>:<span class="hljs-string">&quot;51&quot;</span>,<span class="hljs-string">&quot;relField&quot;</span>:<span class="hljs-string">&quot;relation_id&quot;</span>,<span class="hljs-string">&quot;type&quot;</span>:<span class="hljs-string">&quot;slave&quot;</span>}
+]
+</code></pre>
+<p>fragId:&#x7247;&#x6BB5;Id
+relField:&#x5173;&#x8054;&#x5B57;&#x6BB5;&#x540D;&#x79F0;
+type:&#x8868;&#x7C7B;&#x578B; master:&#x4E3B;&#x8868; slave&#xFF1A;&#x5B50;&#x8868;</p>
 
                                 
                                 </section>
@@ -305,12 +312,12 @@
 
             
                 
-                <a href="../" class="navigation navigation-prev " aria-label="Previous page: 前言">
+                <a href="穿梭框片段配置.html" class="navigation navigation-prev " aria-label="Previous page: 穿梭框片段配置">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="快速开发平台使用说明.html" class="navigation navigation-next " aria-label="Next page: 快速开发平台使用说明">
+                <a href="片段配置.html" class="navigation navigation-next " aria-label="Next page: 片段配置">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -321,7 +328,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"快速开发平台","level":"2.1","depth":1,"next":{"title":"快速开发平台使用说明","level":"2.1.1","depth":2,"path":"rapid-platform/快速开发平台使用说明.md","ref":"rapid-platform/快速开发平台使用说明.md","articles":[{"title":"元对象定义","level":"2.1.1.1","depth":3,"path":"rapid-platform/元对象定义.md","ref":"rapid-platform/元对象定义.md","articles":[]},{"title":"数据源维护","level":"2.1.1.2","depth":3,"path":"rapid-platform/数据源维护.md","ref":"rapid-platform/数据源维护.md","articles":[]},{"title":"自定义操作项配置","level":"2.1.1.3","depth":3,"path":"rapid-platform/自定义操作项配置.md","ref":"rapid-platform/自定义操作项配置.md","articles":[]},{"title":"穿梭框片段配置","level":"2.1.1.4","depth":3,"path":"rapid-platform/穿梭框片段配置.md","ref":"rapid-platform/穿梭框片段配置.md","articles":[]},{"title":"主子表类型配置","level":"2.1.1.5","depth":3,"path":"rapid-platform/主子表配置.md","ref":"rapid-platform/主子表配置.md","articles":[]},{"title":"片段配置","level":"2.1.1.6","depth":3,"path":"rapid-platform/片段配置.md","ref":"rapid-platform/片段配置.md","articles":[]}]},"previous":{"title":"前言","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"sking","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"IOC","language":"zh-hans","links":{"sidebar":{"百度":"https://baidu.com"}},"gitbook":"3.2.3","description":"IOC"},"file":{"path":"rapid-platform/README.md","mtime":"2019-11-30T09:35:02.172Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-02T11:43:54.647Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"主子表类型配置","level":"2.1.1.5","depth":3,"next":{"title":"片段配置","level":"2.1.1.6","depth":3,"path":"rapid-platform/片段配置.md","ref":"rapid-platform/片段配置.md","articles":[]},"previous":{"title":"穿梭框片段配置","level":"2.1.1.4","depth":3,"path":"rapid-platform/穿梭框片段配置.md","ref":"rapid-platform/穿梭框片段配置.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"sking","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"IOC","language":"zh-hans","links":{"sidebar":{"百度":"https://baidu.com"}},"gitbook":"3.2.3","description":"IOC"},"file":{"path":"rapid-platform/主子表配置.md","mtime":"2019-12-02T11:38:01.438Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-02T11:43:54.647Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
