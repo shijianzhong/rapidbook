@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>片段配置 · IOC</title>
+        <title>渲染平台嵌入第三方系统前端注意点 · IOC</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -47,10 +47,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="渲染平台嵌入第三方系统前端注意点.html" />
+    <link rel="next" href="operation/" />
     
     
-    <link rel="prev" href="主子表配置.html" />
+    <link rel="prev" href="片段配置.html" />
     
 
     </head>
@@ -188,7 +188,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.1.1.5" data-path="片段配置.html">
+        <li class="chapter " data-level="2.1.1.5" data-path="片段配置.html">
             
                 <a href="片段配置.html">
             
@@ -201,7 +201,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.1.6" data-path="渲染平台嵌入第三方系统前端注意点.html">
+        <li class="chapter active" data-level="2.1.1.6" data-path="渲染平台嵌入第三方系统前端注意点.html">
             
                 <a href="渲染平台嵌入第三方系统前端注意点.html">
             
@@ -423,7 +423,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >片段配置</a>
+        <a href=".." >渲染平台嵌入第三方系统前端注意点</a>
     </h1>
 </div>
 
@@ -438,45 +438,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x7247;&#x6BB5;&#x914D;&#x7F6E;">&#x7247;&#x6BB5;&#x914D;&#x7F6E;</h1>
-<pre><code class="lang-json">{
-    <span class="hljs-string">&quot;deleteConfig&quot;</span>: {
-        <span class="hljs-string">&quot;logicalDelete&quot;</span>: <span class="hljs-literal">true</span>,
-        <span class="hljs-string">&quot;logicalDeleteFieldName&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
-        <span class="hljs-string">&quot;logicalDeleteFieldValue&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
-        <span class="hljs-string">&quot;deleteTableList&quot;</span>: [{
-                <span class="hljs-string">&quot;tableName&quot;</span>: <span class="hljs-string">&quot;master_table&quot;</span>,
-                <span class="hljs-string">&quot;pkName&quot;</span>: <span class="hljs-string">&quot;menu_Id&quot;</span>,
-                <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;master&quot;</span>
-            },
-            {
-                <span class="hljs-string">&quot;tableName&quot;</span>: <span class="hljs-string">&quot;slave_table&quot;</span>,
-                <span class="hljs-string">&quot;pkName&quot;</span>: <span class="hljs-string">&quot;menu_Id&quot;</span>,
-                <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;slave&quot;</span>
-            }
-        ]
-    },
-    <span class="hljs-string">&quot;defaultQueryConfig&quot;</span>: [{
-        <span class="hljs-string">&quot;fieldName&quot;</span>: <span class="hljs-string">&quot;valid_flag&quot;</span>,
-        <span class="hljs-string">&quot;fieldValue&quot;</span>: <span class="hljs-string">&quot;1&quot;</span>,
-        <span class="hljs-string">&quot;comparisonCode&quot;</span>: <span class="hljs-string">&quot;equal&quot;</span>
-    }]
-}
-</code></pre>
-<p>&#x7247;&#x6BB5;&#x9879;&#x4E2D;&#x7684;&#x914D;&#x7F6E;
-deleteConfig&#xFF1A;&#x5220;&#x9664;&#x76F8;&#x5173;&#x914D;&#x7F6E;
-logicalDelete&#xFF1A;&#x662F;&#x5426;&#x903B;&#x8F91;&#x5220;&#x9664;&#xFF08;&#x9ED8;&#x8BA4;false&#xFF09;
-logicalDeleteFieldName&#xFF1A;&#x903B;&#x8F91;&#x5220;&#x9664;&#x66F4;&#x65B0;&#x5B57;&#x6BB5;&#x540D;
-logicalDeleteFieldValue&#xFF1A;&#x903B;&#x8F91;&#x5220;&#x9664;&#x66F4;&#x65B0;&#x503C;
-deleteTableList&#xFF1A;&#x5220;&#x9664;&#x6D89;&#x8BA1;&#x7684;&#x8868;&#xFF08;&#x5F53;&#x7247;&#x6BB5;&#x6D89;&#x53CA;&#x4E3B;&#x4ECE;&#x8868;&#x3001;&#x89C6;&#x56FE;&#x65F6;&#x9700;&#x8981;&#x914D;&#x7F6E;&#xFF09;
-tableName&#xFF1A;&#x771F;&#x5B9E;&#x8868;&#x540D;
-pkName&#xFF1A;&#x5220;&#x9664;&#x7684;&#x6761;&#x4EF6;&#x5B57;&#x6BB5;&#xFF08;&#x4E00;&#x822C;&#x662F;&#x4E3B;&#x952E;&#xFF09;
-type&#xFF1A;&#x8868;&#x4E3B;&#x4ECE;&#x7C7B;&#x578B;&#xFF08;&#x5982;&#x679C;&#x662F;&#x903B;&#x8F91;&#x5220;&#x9664;&#xFF0C;&#x53EA;&#x4F1A;&#x66F4;&#x65B0;&#x4E3B;&#x8868;&#xFF0C;&#x4ECE;&#x8868;&#x4E0D;&#x64CD;&#x4F5C;&#xFF09;</p>
-<p>defaultQueryConfig&#xFF1A;list&#x9ED8;&#x8BA4;&#x67E5;&#x8BE2;&#x6761;&#x4EF6;&#xFF08;&#x6570;&#x7EC4;&#xFF09;
-    fieldName&#xFF1A;&#x5B57;&#x6BB5;&#x540D;
-    fieldValue&#xFF1A;&#x5B57;&#x6BB5;&#x503C;
-    comparisonCode&#xFF1A;&#x64CD;&#x4F5C;&#x7B26;&#xFF08;&#x503C;&#x53C2;&#x8003;&#x901A;&#x7528;&#x5B57;&#x5178;&#x64CD;&#x4F5C;&#x7B26;&#x7BA1;&#x7406;&#xFF0C;&#x5982;like&#xFF0C;equal&#x3002;&#x3002;&#x3002;.&#x9ED8;&#x8BA4;&#x503C;equal&#xFF09;</p>
-<p>pkName&#xFF1A;&#x5220;&#x9664;&#x7684;&#x6761;&#x4EF6;&#x5B57;&#x6BB5;&#xFF08;&#x4E00;&#x822C;&#x662F;&#x4E3B;&#x952E;&#xFF0C;&#x5982;&#x679C;type&#x7C7B;&#x578B;&#x662F;salve&#xFF0C;&#x4E00;&#x822C;&#x4E3A;&#x5916;&#x952E;&#x5B57;&#x6BB5;&#xFF09;</p>
+                                <h1 id="&#x6E32;&#x67D3;&#x5E73;&#x53F0;&#x5D4C;&#x5165;&#x7B2C;&#x4E09;&#x65B9;&#x7CFB;&#x7EDF;&#x524D;&#x7AEF;&#x6CE8;&#x610F;&#x70B9;">&#x6E32;&#x67D3;&#x5E73;&#x53F0;&#x5D4C;&#x5165;&#x7B2C;&#x4E09;&#x65B9;&#x7CFB;&#x7EDF;&#x524D;&#x7AEF;&#x6CE8;&#x610F;&#x70B9;</h1>
 
                                 
                                 </section>
@@ -504,12 +466,12 @@ type&#xFF1A;&#x8868;&#x4E3B;&#x4ECE;&#x7C7B;&#x578B;&#xFF08;&#x5982;&#x679C;&#x6
 
             
                 
-                <a href="主子表配置.html" class="navigation navigation-prev " aria-label="Previous page: 主子表类型配置">
+                <a href="片段配置.html" class="navigation navigation-prev " aria-label="Previous page: 片段配置">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="渲染平台嵌入第三方系统前端注意点.html" class="navigation navigation-next " aria-label="Next page: 渲染平台嵌入第三方系统前端注意点">
+                <a href="operation/" class="navigation navigation-next " aria-label="Next page: 操作项">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -520,7 +482,7 @@ type&#xFF1A;&#x8868;&#x4E3B;&#x4ECE;&#x7C7B;&#x578B;&#xFF08;&#x5982;&#x679C;&#x6
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"片段配置","level":"2.1.1.5","depth":3,"next":{"title":"渲染平台嵌入第三方系统前端注意点","level":"2.1.1.6","depth":3,"path":"rapid-platform/渲染平台嵌入第三方系统前端注意点.md","ref":"rapid-platform/渲染平台嵌入第三方系统前端注意点.md","articles":[]},"previous":{"title":"主子表类型配置","level":"2.1.1.4","depth":3,"path":"rapid-platform/主子表配置.md","ref":"rapid-platform/主子表配置.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"sking","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"IOC","language":"zh-hans","links":{"sidebar":{"百度":"https://baidu.com"}},"gitbook":"3.2.3","description":"IOC"},"file":{"path":"rapid-platform/片段配置.md","mtime":"2019-12-02T11:42:34.410Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-27T08:30:17.239Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"渲染平台嵌入第三方系统前端注意点","level":"2.1.1.6","depth":3,"next":{"title":"操作项","level":"2.1.1.7","depth":3,"path":"rapid-platform/operation/README.md","ref":"rapid-platform/operation/README.md","articles":[{"title":"1.操作项类型","level":"2.1.1.7.1","depth":4,"path":"rapid-platform/operation/操作项类型.md","ref":"rapid-platform/operation/操作项类型.md","articles":[]},{"title":"2.基础操作项","level":"2.1.1.7.2","depth":4,"path":"rapid-platform/operation/基础操作项.md","ref":"rapid-platform/operation/基础操作项.md","articles":[]},{"title":"3.动作类型","level":"2.1.1.7.3","depth":4,"path":"rapid-platform/operation/动作类型.md","ref":"rapid-platform/operation/动作类型.md","articles":[]},{"title":"4.动作目标","level":"2.1.1.7.4","depth":4,"path":"rapid-platform/operation/动作目标.md","ref":"rapid-platform/operation/动作目标.md","articles":[]},{"title":"5.接口地址","level":"2.1.1.7.5","depth":4,"path":"rapid-platform/operation/接口地址.md","ref":"rapid-platform/operation/接口地址.md","articles":[]},{"title":"6.图标地址","level":"2.1.1.7.6","depth":4,"path":"rapid-platform/operation/图标地址.md","ref":"rapid-platform/operation/图标地址.md","articles":[]},{"title":"7.链接地址","level":"2.1.1.7.7","depth":4,"path":"rapid-platform/operation/链接地址.md","ref":"rapid-platform/operation/链接地址.md","articles":[]},{"title":"8.是否隐藏","level":"2.1.1.7.8","depth":4,"path":"rapid-platform/operation/是否隐藏.md","ref":"rapid-platform/operation/是否隐藏.md","articles":[]},{"title":"9.显示顺序","level":"2.1.1.7.9","depth":4,"path":"rapid-platform/operation/显示顺序.md","ref":"rapid-platform/operation/显示顺序.md","articles":[]},{"title":"10.业务拦截器","level":"2.1.1.7.10","depth":4,"path":"rapid-platform/operation/业务拦截器.md","ref":"rapid-platform/operation/业务拦截器.md","articles":[]},{"title":"11.依赖配置","level":"2.1.1.7.11","depth":4,"path":"rapid-platform/operation/依赖配置.md","ref":"rapid-platform/operation/依赖配置.md","articles":[]}]},"previous":{"title":"片段配置","level":"2.1.1.5","depth":3,"path":"rapid-platform/片段配置.md","ref":"rapid-platform/片段配置.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"sking","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"IOC","language":"zh-hans","links":{"sidebar":{"百度":"https://baidu.com"}},"gitbook":"3.2.3","description":"IOC"},"file":{"path":"rapid-platform/渲染平台嵌入第三方系统前端注意点.md","mtime":"2019-12-13T09:54:13.606Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-27T08:30:17.239Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
