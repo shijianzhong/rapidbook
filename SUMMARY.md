@@ -23,6 +23,7 @@
             * [9.显示顺序](rapid-platform/operation/显示顺序.md)
             * [10.业务拦截器](rapid-platform/operation/业务拦截器.md)
             * [11.依赖配置](rapid-platform/operation/依赖配置.md)
+        * [多对多配置](rapid-platform/多对多配置.md)
 
 ## IOC
 
