@@ -452,6 +452,12 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="&#x6570;&#x636E;&#x6E90;&#x7EF4;&#x62A4;">&#x6570;&#x636E;&#x6E90;&#x7EF4;&#x62A4;</h1>
+<h3 id="json&#x65B9;&#x5F0F;">JSON&#x65B9;&#x5F0F;</h3>
+<pre><code class="lang-json">[{<span class="hljs-string">&quot;dic_item_value&quot;</span>:<span class="hljs-string">&quot;1&quot;</span>,<span class="hljs-string">&quot;dic_item_name&quot;</span>:<span class="hljs-string">&quot;&#x7537;&quot;</span>,<span class="hljs-string">&quot;value&quot;</span>:<span class="hljs-number">1</span>},{<span class="hljs-string">&quot;dic_item_value&quot;</span>:<span class="hljs-string">&quot;2&quot;</span>,<span class="hljs-string">&quot;dic_item_name&quot;</span>:<span class="hljs-string">&quot;&#x5973;&quot;</span>,<span class="hljs-string">&quot;value&quot;</span>:<span class="hljs-number">2</span>}]
+</code></pre>
+<h3 id="sql&#x65B9;&#x5F0F;">SQL&#x65B9;&#x5F0F;</h3>
+<pre><code class="lang-sql"><span class="hljs-keyword">select</span> sys_name <span class="hljs-keyword">as</span> dic_item_name,sys_code <span class="hljs-keyword">as</span> dic_item_value <span class="hljs-keyword">from</span> t_uc_sys <span class="hljs-keyword">where</span> sys_type_id=<span class="hljs-number">2</span> :usercenter
+</code></pre>
 
                                 
                                 </section>
@@ -495,7 +501,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"数据源维护","level":"2.1.1.2","depth":3,"next":{"title":"穿梭框片段配置","level":"2.1.1.3","depth":3,"path":"rapid-platform/穿梭框片段配置.md","ref":"rapid-platform/穿梭框片段配置.md","articles":[]},"previous":{"title":"元对象定义","level":"2.1.1.1","depth":3,"path":"rapid-platform/元对象定义.md","ref":"rapid-platform/元对象定义.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"sking","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"IOC","language":"zh-hans","links":{"sidebar":{"百度":"https://baidu.com"}},"gitbook":"3.2.3","description":"IOC"},"file":{"path":"rapid-platform/数据源维护.md","mtime":"2019-12-02T09:58:51.977Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-09T02:05:02.293Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"数据源维护","level":"2.1.1.2","depth":3,"next":{"title":"穿梭框片段配置","level":"2.1.1.3","depth":3,"path":"rapid-platform/穿梭框片段配置.md","ref":"rapid-platform/穿梭框片段配置.md","articles":[]},"previous":{"title":"元对象定义","level":"2.1.1.1","depth":3,"path":"rapid-platform/元对象定义.md","ref":"rapid-platform/元对象定义.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"sking","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"IOC","language":"zh-hans","links":{"sidebar":{"百度":"https://baidu.com"}},"gitbook":"3.2.3","description":"IOC"},"file":{"path":"rapid-platform/数据源维护.md","mtime":"2020-05-20T03:30:56.766Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-20T06:33:14.146Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -503,10 +509,6 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
